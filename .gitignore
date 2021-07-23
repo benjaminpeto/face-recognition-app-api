@@ -1,0 +1,9 @@
+# ENVIRONMENTAL VARIABLES
+.env
+
+# MAC SYSTEM-FILES
+.DS_STORE
+
+# NODE_MODULES
+
+node_modules/
