@@ -3,7 +3,8 @@ const { json } = require('express');
 
 // API of face recognition
 const app = new Clarifai.App({
-  apiKey: process.env.API_KEY,
+  /* apiKey: process.env.API_KEY, */
+    apiKey: "1117af0befda452a9abcfe53bbd85d10",
 });
 
 const handleApiCall = (req, res) => {
