@@ -3,19 +3,21 @@ const bcrypt = require("bcrypt-nodejs");
 const cors = require("cors");
 const knex = require("knex");
 const { response } = require("express");
-/* require('dotenv').config(); */
+require('dotenv').config();
 
 const register = require("./controllers/register");
 const signin = require("./controllers/signin");
 const profile = require("./controllers/profile");
 const image = require("./controllers/image");
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0; 
+
 const db = knex({
   client: "pg",
   connection: {
     connectionString: process.env.DATABASE_URL,
     ssl: true
-  },
+  }
 });
 
 const app = express();
