@@ -67,13 +67,6 @@ app.listen(process.env.PORT || 3000, () => {
   console.log(`app is running on port: ${process.env.PORT}`);
 });
 
-process.on('unhandledRejection', err => {
-  console.log('UNHANDLER REJECTION! Shutting down...');
-  console.log(err.name, err.message);
-  server.close(() => {
-    process.exit(1);
-  });
-});
 
 /*
     STRUCTURE
