@@ -3,7 +3,6 @@ const bcrypt = require("bcrypt-nodejs");
 const cors = require("cors");
 const knex = require("knex");
 const { response } = require("express");
-require('dotenv').config();
 
 const register = require("./controllers/register");
 const signin = require("./controllers/signin");
@@ -18,9 +17,9 @@ const db = knex({
   }
 });
 
-/* db.select('*').from('users').then(data =>{
+db.select('*').from('users').then(data =>{
   console.log(data);
-}); */
+});
 
 const app = express();
 
