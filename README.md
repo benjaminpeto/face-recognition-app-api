@@ -1,8 +1,8 @@
 # face-recognition-app-api
 
-This is the backend of my Face-Recognition-App, built with Node and ExpressJS. Contains libraries like bcrypt for password hashing, knex and pg for the postgreSQL database, CORS to provide a middleware, and the face detection API from Clarifai.
+*This is the backend of my Face-Recognition-App, built with Node and ExpressJS. Contains libraries like bcrypt for password hashing, knex and pg for the postgreSQL database, CORS to provide a middleware, and the face detection API from Clarifai.*
 
-###If you would like to use it, you will need to register on [Clarifai](https://www.clarifai.com/models/ai-face-detection) to get you own API key. __It's free!__
+### If you would like to use it, you will need to register on [Clarifai](https://www.clarifai.com/models/ai-face-detection) to get you own API key. __It's free!__
 
 After you registered on Clarifai, you will need to change the API_KEY to you own in the __./components/image.js__ file.
 
